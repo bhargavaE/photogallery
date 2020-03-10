@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: photogallery
 spec:
+  replicas: 3
   selector:
     matchLabels:
       run: photogallery
