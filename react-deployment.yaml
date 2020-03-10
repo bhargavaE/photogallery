@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: photogallery
+  name: photogalleryy
 spec:
   replicas: 3
   selector:
     matchLabels:
-      run: photogallery
+      run: photogalleryy
   template:
     metadata:
       labels:
-        run: photogallery
+        run: photogalleryy
     spec:
       containers:
-      - name: photogallery
+      - name: photogalleryy
         image: bhargava272/reactapp:v2
         resources:
           limits:
